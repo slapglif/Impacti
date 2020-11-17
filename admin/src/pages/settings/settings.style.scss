@@ -1,0 +1,161 @@
+.settings-page {
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    background-image: url('../../assets/imgs/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px;
+
+    .general-setting {
+        width: 100%;
+        padding: 30px 40px 50px 40px;
+        background-color: #515151;
+        
+    
+        .disable-comment {
+            display: flex;
+            justify-content: space-between;
+            align-items:  center;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+    
+            &:first-of-type {
+                border-bottom: none;
+            }
+        }
+    
+        textarea {
+            overflow: auto;
+            resize: none;
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 7px;
+            padding: 16px 22px;
+            max-height: 300px;
+            background-color: #444444;
+            color: grey;
+            -ms-overflow-style: none;
+
+            &.no-back {
+                background-color: transparent;
+                border: 1.5px solid #a3a3a3;
+                border-radius: 20px;
+            }
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+    
+            &:focus {
+                outline: 0;
+            }
+    
+            &::placeholder {
+                color: grey;
+            }
+    
+            &::-webkit-input-placeholder {
+                color: grey;
+            }
+            
+            &::-moz-placeholder {  /* Firefox 19+ */
+                color: grey;
+            }
+            
+            &:-ms-input-placeholder {
+                color: grey;  
+            }
+        }
+    
+        .btn-200 {
+            width: 200px;
+        }
+
+        .group {
+            margin: 0;
+
+            .form-input {
+                margin: 0;
+            }
+        }
+    }
+
+    hr {
+        background-color: grey;
+    }
+
+    .react-switch-bg {
+        height: 34px !important;
+        padding: 3px !important;
+        width: 64px !important;
+        border-radius: 30px !important;
+
+        div:nth-of-type(2) {
+            top: 2px !important;
+        }
+    }
+
+    .react-switch-handle {
+        top: 4px !important;
+        left: 4px !important;
+    }
+
+    .color-btn {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid grey;
+        margin-right: 10px;
+
+        &.c1 {
+            background-color: white;
+        }
+
+        &.c2 {
+            background-color: #727d75;
+        }
+
+        &.c3 {
+            background-color: #3b443f;
+        }
+
+        &.c4 {
+            background-color: #a85b49;
+        }
+
+        &.c5 {
+            background-color: #e19865;
+        }
+
+        &.c6 {
+            background: linear-gradient(90deg, rgba(50,120,228,1) 0%, rgba(86,209,36,1) 32%, rgba(253,29,29,1) 67%, rgba(242,252,69,1) 100%);
+        }
+
+        &.actived {
+            box-shadow: 0 0 5px 5px red;
+        }
+
+        &:hover {
+            border-color: white;
+            box-shadow: 0 0 5px 2px white;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+    .fontColorWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .fontColorChangeBtn {
+        .form-button {
+            width: 200px;
+        }
+    }
+
+}

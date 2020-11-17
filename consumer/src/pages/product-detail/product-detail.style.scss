@@ -1,0 +1,131 @@
+.product-detail-page {
+    padding: 80px 100px;
+    font-family: 'Work Sans', sans-serif;
+
+    .detail-img {
+        width: 100%;
+        border: 2.5px solid #313131;
+    }
+
+    .description-container {
+        padding: 30px 50px;
+
+        p {
+            color: #a3a3a3;
+
+            &.text-white {
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            span {
+                color: white;
+                font-size: 17px;
+                font-weight: 700;
+
+                &:first-of-type {
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        div {
+
+            &:last-of-type{
+                width: 200px;
+            }            
+        }
+    }
+
+    .row {
+        &.t100 {
+            padding-top: 100px;
+
+            p {
+                color: #a3a3a3;
+            }
+        }
+    }
+
+    textarea {
+        overflow: auto;
+        resize: none;
+        width: 100%;
+        border: 1.5px solid grey;
+        border-radius: 7px;
+        padding: 10px 20px;
+        // max-height: 120px;
+        min-height: 50px;
+        background-color: rgba(255,255,255,0.2);
+        color: #a3a3a3;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            color: #a3a3a3;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #a3a3a3;
+        }
+        
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: #a3a3a3;
+        }
+        
+        &:-ms-input-placeholder {
+            color: #a3a3a3;  
+        }
+    }
+
+    .post-btn {
+        width: 200px;
+    }
+
+    .split-hr {
+        border-color: #555555;
+        margin: 30px 0 40px 0;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .product-detail-page {
+        padding: 20px 15px;
+
+        .description-container {
+            padding: 20px;
+        }
+
+        .row.t100 {
+            padding-top: 10px;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .product-detail-page {
+        padding: 40px 30px;
+
+        .description-container {
+            padding: 20px;
+        }
+
+        .row.t100 {
+            padding-top: 10px;
+            margin-bottom: 0 !important;
+        }
+    }
+}

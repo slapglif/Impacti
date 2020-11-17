@@ -1,0 +1,61 @@
+.dashboard-page {
+    width: 100%;
+    background-image: url('../../assets/imgs/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box; 
+    font-family: "Work Sans", sans-serif;
+
+    .graph-wrapper {
+       
+        background-color: #555555aa;
+        margin: 10px 0;
+        padding: 10px 0;
+
+        .graph-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            .form-select-container {                
+                margin: 0;
+
+                .form-select {
+                    height: auto;
+                    min-width: 150px;
+                    border: 1px solid #a3a3a3;
+                    padding: 5px 15px;
+                    font-size: 14px;
+
+                    .fa {
+                        font-size: 12px;
+                        margin-left: 20px;
+                    }
+                }
+
+                .option-div {
+                    border-width: 1px;
+                    .option-item {
+                        padding: 5px 15px;
+                        font-size: 14px;
+                        border-width: 1px;
+                    }
+                }
+            }
+        }
+
+        // .recharts-cartesian-grid-horizontal {
+        //     display: none;
+        // }
+    }
+    
+}

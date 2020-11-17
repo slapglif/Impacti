@@ -1,0 +1,13 @@
+.fontWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: 170px;
+
+    label {
+        font-weight: 700;
+        margin-left: -5px;
+        color: white;
+    }
+}

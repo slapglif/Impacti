@@ -1,0 +1,109 @@
+.table-row {            
+    padding: 15px 0 15px 10px;
+    align-items: center;
+    font-size: 14px;
+    color: #a3a3a3;  
+    
+    &:nth-child(even){
+        background-color: #666666;
+    }
+
+
+    img {
+        width: 50px;
+        height: 48px;
+        border-radius: 3px;
+    } 
+
+    .non-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #a3a3a3;
+    }
+
+    .fas {
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    button {
+        background-color: #717171;
+        color: white;
+        font-size: 12px;
+        padding: 4px 8px;
+        border: 1.2px solid #a3a3a3;
+        border-radius: 30px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover {
+            border-color: white;
+            background-color: #a3a3a3;
+        }
+    }
+}
+
+.removeDialogWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    
+    .removeDialog {
+        padding: 20px 20px 30px 20px;
+        width: 500px;
+        border-radius: 10px;
+        background-color:grey;
+        box-shadow: 0 0 10px 2px white;
+
+        .closeIcon {
+            cursor: pointer;
+        }
+
+        .custom-datepicker {
+            width: 100%;
+            height: 400px;
+            background-color: #777777;
+            border-radius: 5px;
+            color: #a3a3a3;
+        
+            .datepicker-header {
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                padding: 10px 15px;
+            }
+        
+            .date-select {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 70px;
+        
+                p {
+                    cursor: context-menu;
+        
+                    &.pointer {
+                        cursor: pointer;
+                    }
+                }
+            }
+        
+            .form-button {
+                background-color: #8c8c8c;
+            }
+        
+        }
+    }    
+}

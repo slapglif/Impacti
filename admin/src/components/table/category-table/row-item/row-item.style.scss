@@ -1,0 +1,59 @@
+.table-row {            
+    padding: 15px 0 15px 10px;
+    align-items: center;
+    font-size: 15px;
+    color: #a3a3a3;  
+    
+    &:nth-child(even){
+        background-color: #666666;
+    }
+
+    .fas {
+        cursor: pointer;
+    }
+
+    input {
+        &.edit {
+            color: #a3a3a3;
+            background-color: transparent;
+            border: 1.2px solid grey;
+            border-radius: 7px;
+            padding: 5px 7px;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &.empty {
+            box-shadow: 0 0 5px 3px #ff3547;
+        }
+    }
+
+    .form-select-container {
+        margin: 0;
+
+        .form-select {
+            border-width: 1.2px;
+            height: auto;
+            padding: 5px 20px;
+        }
+    }
+
+    .editIcon {
+        cursor: pointer;
+        font-size: 20px;
+
+        &:first-of-type {
+            margin-right: 15px;
+
+            &:hover {
+                color: #33c23e;
+            }
+        }
+
+        &:hover {
+            color: #d64444;
+        }
+    }
+}

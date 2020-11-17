@@ -1,0 +1,65 @@
+.product-item {
+    background-color: #767676;
+    height: 60px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: context-menu;
+
+    &.webinar {
+        height: 100px;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }  
+}
+
+@media (max-width: 575.98px) { 
+    .product-item {
+        margin: 0;
+        font-size: 14px;    
+        
+        &.webinar {
+            height: auto;
+    
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }  
+    }
+
+    .openBtn {
+        background-color: transparent;
+        border: 1.5px solid #eeeeee;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        color: #eeeeee;
+        font-size: 13px;
+        padding-top: 3px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .openedTable {
+        background-color: #565656;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        cursor: context-menu;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}

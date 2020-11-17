@@ -1,0 +1,115 @@
+.landing-page {
+    width: 100%;
+    min-height: calc(100vh - 116px);
+    background-image: url('../../assets/land.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'News Cycle', sans-serif;
+
+    .content {
+        padding: 90px 120px 0 60%;
+        
+        p {
+            color: white;
+            cursor: default;
+
+            &:first-of-type {
+                font-size: 90px;
+                padding: 0;
+                margin-bottom: -30px;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 50px;
+            }
+
+            &:last-of-type {
+                font-size: 17px;
+                letter-spacing: 0.5px;
+
+            }
+        }
+
+        .btns {
+            padding: 20px 40px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .form-button {
+                letter-spacing: 0.5px;
+
+                &:first-of-type {
+                    margin-right: 18px;
+                }
+
+                &:last-of-type {
+                    background-color: transparent;
+                    border: 2px solid #e41c39;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 575.98px) { 
+    .landing-page {
+        background-position: -70px;
+        background-size: 200% 100%;
+
+        .content {
+            padding: 50px 20px 20px 20px;
+
+            p {
+                opacity: 0.5;
+                   
+                &:first-of-type {
+                    font-size: 70px;
+                    margin-bottom: 0;
+                }
+    
+                &:nth-of-type(2) {
+                    font-size: 40px;
+                }
+
+                &:last-of-type {
+                    opacity: 0.7;
+                }
+            }
+
+            .btns {
+                padding: 0 20px;
+                display: block;
+
+                .form-button {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .landing-page {
+        background-position: left;
+
+        .content {
+            padding: 30px;
+
+            p {
+                   
+                &:first-of-type {
+                    font-size: 70px;
+                    margin-bottom: 0;
+                }
+    
+                &:nth-of-type(2) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

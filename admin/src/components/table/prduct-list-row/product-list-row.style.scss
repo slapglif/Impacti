@@ -1,0 +1,87 @@
+.table-row {            
+    padding: 15px 0 15px 10px;
+    align-items: center;
+    font-size: 14px;
+    color: #a3a3a3;  
+    
+    &:nth-child(even){
+        background-color: #666666;
+    }
+
+    .thumb {
+        // margin: 0 40px 0 -50px;
+        img {
+            width: 50px;
+            height: 48px;
+            border-radius: 3px;
+        }
+    }
+
+    .non-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #a3a3a3;
+    }
+
+    .fas {
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .calIcon {
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .activeBtn {
+        background-color: #717171;
+        color: white;
+        font-size: 12px;
+        padding: 4px 8px;
+        border: 1.2px solid #a3a3a3;
+        border-radius: 30px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover {
+            border-color: white;
+            background-color: #a3a3a3;
+        }
+    }
+
+    .react-datepicker-wrapper {
+        input {
+            width: 120px;
+            background-color: transparent;
+            border: none;
+            color: #a3a3a3;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    .react-datepicker-popper {
+        left: -165px !important;
+
+        .react-datepicker__triangle {
+            left: 220px !important;
+        }
+    }
+    .dateWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
